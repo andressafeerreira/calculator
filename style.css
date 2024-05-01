@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --background: #303136;
+    --blue-light: #339DFF;
+    --blue: #005DB2;
+    --gray-light: #A5A5A5;
+    --gray: #616161;
+    --blue-text: #29A8FF;
+    --white: #ffffff;
+    --bg-blue-light: #DAF0FF;
+}
+
+.content {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-blue-light);
+}
+
+.main {
+    background: black;
+    width: 375px;
+    height: 812px;
+    border-radius: 39px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 3px 6px 10px 6px rgb(20 20 20 / 50%);
+}
+
+.screen {
+    /* background: var(--gray); */
+    height: 40%;
+    width: 100%;
+    border-radius: 39px;
+}
+
+.keyboard {
+    /* background: var(--white); */
+    height: 60%;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    border-radius: 39px;
+    align-items: center;
+    justify-content: center;
+}
+
+.keyboard p {
+    color: var(--blue-text);
+}
+
+.first-keyboard p, .zero-keyboard p {
+    background-color: var(--background);
+    border-radius: 15px;
+    font-size: 28px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.second-keyboard p {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-keyboard {
+    height: 100%;
+    width: 80%;
+}
+
+.second-keyboard {
+    height: 100%;
+    width: 20%;
+}
+
+.first-keyboard {
+    height: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.zero-keyboard {
+    height: 20%;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 2fr 1fr;
+}
+
+.power {
+    background-color: var(--gray) !important;
+    color: var(--gray-light) !important;
+}
+
+.btn-blue-light {
+    background-color: var(--blue-light);
+    color: var(--white) !important;
+    border-radius: 15px !important;
+    font-size: 28px !important;
+    margin: 5px !important;
+}
+
+.btn-blue {
+    background-color: var(--blue) !important;
+    color: var(--blue-light) !important;
+    border-radius: 15px !important;
+    font-size: 28px !important;
+    margin: 5px !important;
+}
+
+.btn-deg {
+    background-color: var(--background);
+    border-radius: 15px;
+    font-size: 28px;
+    margin: 5px;
+    height: 68px;
+}
+
