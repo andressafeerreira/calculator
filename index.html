@@ -5,45 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
     <link rel="stylesheet" href="style.css">
+    <script src="calculator.js"></script>
 </head>
 <body class="content">
     <div class="main">
         <div class="screen">
-
+            <h1>Hello</h1>
         </div>
         <div class="keyboard">
             <div class="main-keyboard">
                 <div class="first-keyboard">
-                    <p>e</p>
-                    <p>u</p>
-                    <p>sin</p>
-                    <p class="power">Ac</p>
-                    <p class="power">x</p>
-                    <p class="btn-blue">/</p>
-                    <p>9</p>
-                    <p>8</p>
-                    <p>7</p>
-                    <p>6</p>
-                    <p>5</p>
-                    <p>4</p>
-                    <p>3</p>
-                    <p>2</p>
-                    <p>1</p>
+                    <button id="button_e" onclick="getValueButton('e')" value="e">e</button>
+                    <button id="button_u" onclick="getValueButton('u')" value="u">u</button>
+                    <button id="button_sin" onclick="getValueButton('sin')" value="sin">sin</button>
+                    <button id="button_power" onclick="getValueButton('Ac')" value="" class="power">Ac</button>
+                    <button id="button_erase" onclick="getValueButton('x')" value="x" class="power">x</button>
+                    <button id="button_division" onclick="getValueButton('/')" value="" class="btn-blue">/</button>
+                    <button id="button_9" onclick="getValueButton(9)" value="9">9</button>
+                    <button id="button_8" onclick="getValueButton(8)" value="8">8</button>
+                    <button id="button_7" onclick="getValueButton(7)" value="7">7</button>
+                    <button id="button_6" onclick="getValueButton(6)" value="6">6</button>
+                    <button id="button_5" onclick="getValueButton(5)" value="5">5</button>
+                    <button id="button_4" onclick="getValueButton(4)" value="4">4</button>
+                    <button id="button_3" onclick="getValueButton(3)" value="3">3</button>
+                    <button id="button_2" onclick="getValueButton(2)" value="2">2</button>
+                    <button id="button_1" onclick="getValueButton(1)" value="1">1</button>
                 </div>
                 <div class="zero-keyboard">
-                    <p>0</p>
-                    <p>.</p>
+                    <button id="button_0" onclick="getValueButton(0)" value="0">0</button>
+                    <button id="button_point" onclick="getValueButton('.')" value=".">.</button>
                 </div>
             </div>
             <div class="second-keyboard">
                 <div class="second-one">
-                    <p class="btn-deg">deg</p>
-                    <p class="btn-blue">*</p>
-                    <p class="btn-blue">-</p>
-                </div>
-                <div class="second-two">
-                    <p class="btn-blue">+</p>
-                    <p class="btn-blue-light">=</p>
+                    <button id="button_deg" onclick="getValueButton('deg')" class="btn-deg">deg</button>
+                    <button id="button_multiply" onclick="getValueButton('*')" value="*" class="btn-blue">*</button>
+                    <button id="button_subtract" onclick="getValueButton('-')" value="-" class="btn-blue">-</button>
+               </div>
+               <div class="second-two">
+                    <button id="button_add" onclick="getValueButton('+')" value="+" class="btn-blue">+</button>
+                    <button id="button_equal" onclick="getValueButton('=')" value="=" class="btn-blue-light">=</button>
                 </div>
             </div>
         </div>

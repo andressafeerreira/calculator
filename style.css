@@ -36,10 +36,14 @@
 }
 
 .screen {
-    /* background: var(--gray); */
     height: 40%;
     width: 100%;
     border-radius: 39px;
+    display: flex;
+    justify-content: flex-end;
+    color: var(--white);
+    align-items: flex-end;
+    padding: 20px;
 }
 
 .keyboard {
@@ -53,11 +57,11 @@
     justify-content: center;
 }
 
-.keyboard p {
+.keyboard button {
     color: var(--blue-text);
 }
 
-.first-keyboard p, .zero-keyboard p {
+.first-keyboard button, .zero-keyboard button {
     background-color: var(--background);
     border-radius: 15px;
     font-size: 28px;
@@ -65,13 +69,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
-.second-keyboard p {
-    padding: 30px;
+.second-keyboard button {
+    padding: 27px;
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 .main-keyboard {
@@ -82,6 +88,7 @@
 .second-keyboard {
     height: 100%;
     width: 20%;
+
 }
 
 .first-keyboard {
@@ -124,6 +131,13 @@
     border-radius: 15px;
     font-size: 28px;
     margin: 5px;
-    height: 68px;
+    height: 60px;
+    width: ;
 }
+
+.second-one, .second-two {
+    display: flex;
+    flex-direction: column;
+}
+
 
