@@ -1,5 +1,10 @@
+var currentValue = '';
+
+
 function getValueButton(number){
     console.log(`Clique no botão ${number}`)
 
-    var currentValue = '';
+    currentValue = currentValue + number;
+
+    document.getElementById('numbers').innerHTML = currentValue;
 }
